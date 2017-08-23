@@ -69,7 +69,7 @@ $(document).ready(function() {
     var path = $('input[name=pathSelect]:checked').val();
     //If Care Team Path is selected
     
-    if (path == 'accessing') {
+    if (path == 'team') {
       //PATH 01
       //SECTION 01
 
@@ -86,7 +86,7 @@ $(document).ready(function() {
       $('#backlink .start-over').toggleClass('inactive active');
       $('#backlink .back-to-site').toggleClass('active inactive');
 
-    } else if (path == 'tailoring') { 
+    } else if (path == 'patient') { 
     //If Care Plan Path is selected
       //PATH 02
       //SECTION 01
@@ -99,44 +99,6 @@ $(document).ready(function() {
 
       // Call animation
       anim_p02s1();
-
-      // Actvate, deactivate backlinks
-      $('#backlink .start-over').toggleClass('inactive active');
-      $('#backlink .back-to-site').toggleClass('active inactive');
-
-    } else if (path == 'tracking') {
-    // If Patient Path is selected
-
-      //PATH 03
-      //SECTION 01
-
-      //Deactivate Start screen
-      $('#start').toggleClass('active inactive');
-
-      //Activate Path 03
-      $('#path_03').toggleClass('inactive active');
-
-      // Call animation and tooltip
-      anim_p03_1();
-
-      // Actvate, deactivate backlinks
-      $('#backlink .start-over').toggleClass('inactive active');
-      $('#backlink .back-to-site').toggleClass('active inactive');
-
-    } else if (path == 'patient') {
-    // If Patient Path is selected
-
-      //PATH 04
-      //SECTION 01
-
-      //Deactivate Start screen
-      $('#start').toggleClass('active inactive');
-
-      //Activate Path 03
-      $('#path_04').toggleClass('inactive active');
-
-      // Call animation and tooltip
-      anim_p04_1();
 
       // Actvate, deactivate backlinks
       $('#backlink .start-over').toggleClass('inactive active');
