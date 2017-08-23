@@ -1009,6 +1009,107 @@ function anim_p02s05()
 
   });
 
+  //Section 02 - Clicked
+  $( '#path_01_progress .two' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p01s02();
+
+  });
+
+  //Section 03 - Clicked
+  $( '#path_01_progress .three' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p01s03_1();
+
+  });
+
+  //Section 04 - Clicked
+  $( '#path_01_progress .four' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p01s04_1();
+
+  });
+
+  //Section 05 - Clicked
+  $( '#path_01_progress .five' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p01s05();
+
+  });
+
+  //Section 06 - Clicked
+  $( '#path_01_progress .six' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p01s06();
+
+  });
+
+  //Section 07 - Clicked
+  $( '#path_01_progress .seven' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p01s07();
+
+  });
+
+  //Section 08 - Clicked
+  $( '#path_01_progress .eight' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p01s08();
+
+  });
+
+  //Section 09 - Clicked
+  $( '#path_01_progress .nine' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p01s09_1();
+
+  });
+
+  //Section 09 - Clicked
+  $( '#path_01_progress .ten' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p01s10();
+
+  });
+
+
+
 
 
 
@@ -1024,8 +1125,55 @@ function anim_p02s05()
     changePagination( this );
 
     //Activate Section 01 tip, animation, number
-    anim_p02s1();
+    anim_p02s01();
 
   });
+
+  //Section 02 - Clicked
+  $( '#path_02_progress .two' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p02s02_1();
+
+  });
+
+  //Section 03 - Clicked
+  $( '#path_02_progress .three' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p02s03();
+
+  });
+
+  //Section 04 - Clicked
+  $( '#path_02_progress .four' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p02s04();
+
+  });
+
+  //Section 05 - Clicked
+  $( '#path_02_progress .five' ).on( 'click', function(){
+
+    // Change pagination
+    changePagination( this );
+
+    //Activate Section 01 tip, animation, number
+    anim_p02s05();
+
+  });
+
+
+
 
 });
