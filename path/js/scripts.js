@@ -449,13 +449,21 @@ function anim_p02s01()
 
 
 // Slide 2
-function anim_p02s02_1()
+function anim_p02s02_1( prev )
 {
-  // Initialize animation
-  anim_p2_s2 = init_anim( 'anim_p02s02', '../bodymovin/p02s02/data.json' );
+  // Check to see if click is from previous link
+  if ( prev != null ) {
+
+    anim_p2_s2.stop();
+  } else {
+    $( '#anim_p02s02' ).toggleClass( 'inactive active' );
+
+    // Initialize animation
+    anim_p2_s2 = init_anim( 'anim_p02s02', '../bodymovin/p02s02/data.json' );    
+  }
+
 
   //Activate animation and tooltip
-  $( '#anim_p02s02' ).toggleClass( 'inactive active' );
   setTimeout( function() {
     $( '#tip_p02s02-1' ).toggleClass( 'inactive active' );
   }, 750 );
@@ -468,8 +476,23 @@ function anim_p02s02_1()
 };
 
 
-function anim_p02s02_2()
+function anim_p02s02_2( prev )
 {
+  // Check to see if click is from previous link
+  if ( prev != null ) {
+    //Activate animation and tooltip
+    $( '#anim_p02s02' ).toggleClass( 'inactive active' );
+    // Initialize animation
+    anim_p2_s2 = init_anim( 'anim_p02s02', '../bodymovin/p02s02/data.json' );
+    // Trigger animation
+    // Open animation and stop on frame 1
+    anim_p2_s2.addEventListener( 'data_ready', function(){
+      anim_p2_s2.goToAndStop( 1, true );
+    }, false);
+  } else {
+    
+  }
+
   //Activate animation and tooltip
   setTimeout( function() {
     $( '#tip_p02s02-2' ).toggleClass( 'inactive active' );
@@ -1176,10 +1199,6 @@ function anim_p02s05()
 
 
 
-
-
-
-
 //////////////////////
 // PATH 02 || 5 - 1 //
 //////////////////////
@@ -1188,19 +1207,86 @@ function anim_p02s05()
 //SECTION 05
 
   //Check for "previous" click
-    $( '#tip_p02s06 .prev' ).on( 'click', function(){
+    $( '#tip_p02s05 .prev' ).on( 'click', function(){
 
       //Deactivate animation and tooltip
-      $( '#anim_p02s06' ).toggleClass( 'active inactive' );
-      $( '#tip_p02s06' ).toggleClass( 'active inactive' );
+      $( '#anim_p02s05' ).toggleClass( 'active inactive' );
+      $( '#tip_p02s05' ).toggleClass( 'active inactive' );
 
       // Trigger animation
-      anim_p02s5();
+      anim_p02s04();
 
       //Change progression
-      $( '#path_02_progress .six' ).toggleClass( 'active inactive' );
-      $( '#path_02_progress .five' ).toggleClass( 'inactive active' );
+      $( '#path_02_progress .five' ).toggleClass( 'active inactive' );
+      $( '#path_02_progress .four' ).toggleClass( 'inactive active' );
   });
+
+
+//SECTION 04
+
+  //Check for "previous" click
+    $( '#tip_p02s04 .prev' ).on( 'click', function(){
+
+      //Deactivate animation and tooltip
+      $( '#anim_p02s04' ).toggleClass( 'active inactive' );
+      $( '#tip_p02s04' ).toggleClass( 'active inactive' );
+
+      // Trigger animation
+      anim_p02s03();
+
+      //Change progression
+      $( '#path_02_progress .four' ).toggleClass( 'active inactive' );
+      $( '#path_02_progress .three' ).toggleClass( 'inactive active' );
+  });
+
+
+//SECTION 03
+
+  //Check for "previous" click
+    $( '#tip_p02s03 .prev' ).on( 'click', function(){
+
+      //Deactivate animation and tooltip
+      $( '#anim_p02s03' ).toggleClass( 'active inactive' );
+      $( '#tip_p02s03' ).toggleClass( 'active inactive' );
+
+      // Trigger animation
+      anim_p02s02_2( 'fromPrev' );
+
+      //Change progression
+      $( '#path_02_progress .three' ).toggleClass( 'active inactive' );
+      $( '#path_02_progress .two' ).toggleClass( 'inactive active' );
+  });
+
+
+//SECTION 02
+
+  //Check for "previous" click
+    $( '#tip_p02s02-2 .prev' ).on( 'click', function(){
+
+      //Deactivate animation and tooltip
+      $( '#tip_p02s02-2' ).toggleClass( 'active inactive' );
+
+      // Trigger animation
+      anim_p02s02_1( 'fromPrev' );
+  });
+
+  //Check for "previous" click
+    $( '#tip_p02s02-1 .prev' ).on( 'click', function(){
+
+      //Deactivate animation and tooltip
+      $( '#anim_p02s02' ).toggleClass( 'active inactive' );
+      $( '#tip_p02s02-1' ).toggleClass( 'active inactive' );
+
+      // Trigger animation
+      anim_p02s01();
+
+      //Change progression
+      $( '#path_02_progress .two' ).toggleClass( 'active inactive' );
+      $( '#path_02_progress .one' ).toggleClass( 'inactive active' );
+  });
+
+
+
 
 
 
