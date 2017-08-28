@@ -877,7 +877,153 @@ fieldset {
 
   /* Section 01 */
 
+  #tip_p01s01 {
+    left: 375px;
+    bottom: 245px;
+  }
 
+  /* Section 02 */
+
+  #tip_p01s02 {
+    left: 200px;
+    bottom: 275px;
+  }
+
+  /* Section 03 */
+
+  #tip_p01s03-1 {
+    left: 400px;
+    bottom: 260px;
+  }
+
+  #tip_p01s03-2 {
+    left: 500px;
+    bottom: 175px;
+  }
+
+  /* Section 04 */
+
+  #tip_p01s04-1 {
+    left: 200px;
+    bottom: 165px;
+  }
+
+  #tip_p01s04-2 {
+    left: 420px;
+    bottom: 265px;
+  }
+
+  #tip_p01s04-3 {
+    left: 275px;
+    bottom: 160px;
+  }
+
+  #tip_p01s04-4 {
+    left: 135px;
+    bottom: 165px;
+  }
+
+  #tip_p01s04-5 {
+    left: 140px;
+    bottom: 185px;
+  }
+
+  #tip_p01s04-6 {
+    left: 195px;
+    bottom: 205px;
+  }
+
+  /* Section 05 */
+
+  #tip_p01s05 {
+    left: 215px;
+    bottom: 145px;
+  }
+
+  /* Section 06 */
+
+  #tip_p01s06 {
+    left: 625px;
+  }
+
+  /* Section 07 */
+
+  #tip_p01s07 {
+    left: 475px;
+    bottom: 150px;
+  }
+
+  /* Section 08 */
+
+  #tip_p01s08 {
+    left: 525px;
+    bottom: 225px;
+  }
+
+  /* Section 09 */
+
+  #tip_p01s09-1 {
+    left: 475px;
+    bottom: 143px;
+  }
+
+  #tip_p01s09-2{
+    left: 235px;
+    bottom: 60px;
+  }
+
+  /* Section 10 */
+
+  #tip_p01s10 {
+    left: 630px;
+  }
+
+
+  /* === PATH 02 === */
+
+
+  /* Section 01 */
+
+  #tip_p02s01 {
+    left: 500px;
+  }
+
+  /* Section 02 */
+
+  #tip_p02s02-1 {
+    left: 385px;
+  }
+
+  #tip_p02s02-2 {
+    left: 595px;
+  }
+
+  /* Section 03 */
+
+  #tip_p02s03 {
+    left: 475px;
+  }
+
+  /* Section 04 */
+
+  #tip_p02s04 {
+    left: 555px;
+  }
+
+  /* Section 05 */
+
+  #tip_p02s05 {
+    left: 700px;
+  }
+
+  /* ======= */
+  /* = End = */
+  /* ======= */
+
+  #end .image img {
+    width: 130%;
+    padding: 0px 0px 60px;
+  }
 }
 
 
@@ -908,6 +1054,139 @@ fieldset {
 
 
   /* Section 01 */
+
+  #tip_p01s01 {
+    left: 475px;
+  }
+
+  /* Section 02 */
+
+  #tip_p01s02 {
+    left: 285px;
+  }
+
+  /* Section 03 */
+
+  #tip_p01s03-1 {
+    left: 500px;
+  }
+
+  #tip_p01s03-2 {
+    left: 600px;
+  }
+
+  /* Section 04 */
+
+  #tip_p01s04-1 {
+    left: 300px;
+  }
+
+  #tip_p01s04-2 {
+    left: 520px;
+  }
+
+  #tip_p01s04-3 {
+    left: 375px;
+  }
+
+  #tip_p01s04-4 {
+    left: 235px;
+  }
+
+  #tip_p01s04-5 {
+    left: 240px;
+  }
+
+  #tip_p01s04-6 {
+    left: 295px;
+  }
+
+  /* Section 05 */
+
+  #tip_p01s05 {
+    left: 315px;
+  }
+
+  /* Section 06 */
+
+  #tip_p01s06 {
+    left: 725px;
+  }
+
+  /* Section 07 */
+
+  #tip_p01s07 {
+    left: 575px;
+  }
+
+  /* Section 08 */
+
+  #tip_p01s08 {
+    left: 625px;
+  }
+
+  /* Section 09 */
+
+  #tip_p01s09-1 {
+    left: 575px;
+  }
+
+  #tip_p01s09-2{
+    left: 335px;
+  }
+
+  /* Section 10 */
+
+  #tip_p01s10 {
+    left: 730px;
+  }
+
+
+  /* === PATH 02 === */
+
+
+  /* Section 01 */
+
+  #tip_p02s01 {
+    left: 600px;
+  }
+
+  /* Section 02 */
+
+  #tip_p02s02-1 {
+    left: 485px;
+  }
+
+  #tip_p02s02-2 {
+    left: 695px;
+  }
+
+  /* Section 03 */
+
+  #tip_p02s03 {
+    left: 575px;
+  }
+
+  /* Section 04 */
+
+  #tip_p02s04 {
+    left: 655px;
+  }
+
+  /* Section 05 */
+
+  #tip_p02s05 {
+    left: 800px;
+  }
+
+  /* ======= */
+  /* = End = */
+  /* ======= */
+
+  #end .image img {
+    width: 110%;
+    padding: 0px 0px 60px;
+  }
 
 }
 
