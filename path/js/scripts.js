@@ -831,6 +831,7 @@ function anim_p02s05()
       
       //Activate End Screen
       $( '#end' ).toggleClass( 'inactive active' );
+      $( '.patient' ).css( 'display', 'none' );
     });
 
 
@@ -936,6 +937,7 @@ function anim_p02s05()
       
       //Activate End Screen
       $( '#end' ).toggleClass( 'inactive active' );
+      $( '.provider' ).css( 'display', 'none' );
     });
 
 
