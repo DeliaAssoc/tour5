@@ -738,14 +738,14 @@ fieldset {
 
 #tip_p02s01 {
   left: 400px;
-  bottom: 100px;
+  bottom: 25px;
 }
 
 /* Section 02 */
 
 #tip_p02s02-1 {
-  left: 375px;
-  bottom: 325px;
+  left: 325px;
+  bottom: 60px;
 }
 
 #tip_p02s02-2 {
@@ -943,7 +943,7 @@ fieldset {
   /* Section 06 */
 
   #tip_p01s06 {
-    left: 625px;
+    left: 690px;
   }
 
   /* Section 07 */
@@ -1110,7 +1110,7 @@ fieldset {
   /* Section 06 */
 
   #tip_p01s06 {
-    left: 725px;
+    left: 785px;
   }
 
   /* Section 07 */
@@ -1201,5 +1201,16 @@ fieldset {
     display: block;
     width: 69%;
     margin: 0 auto;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  #start .inner label span {
+    background-image: url('../images/radio-button.png');
+  }
+
+  #start .inner label input[type=radio]:checked+span {
+    background-image: url('../images/radio-button-checked.png');
   }
 }
