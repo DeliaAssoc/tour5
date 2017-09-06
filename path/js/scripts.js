@@ -244,9 +244,9 @@ function anim_p01s04_2()
   // Trigger animation
   // Start animation after 1500ms
   setTimeout( function(){
-    anim_p1_s4.play();
+    anim_p1_s4.playSegments( [0, 130], true );
     anim_p1_s4.addEventListener( 'loopComplete', function(){
-      anim_p1_s4.stop();
+      anim_p1_s4.goToAndStop( 125, true );
     });
   }, 1500);
 
@@ -343,7 +343,7 @@ function anim_p01s06()
     anim_p1_s6.addEventListener( 'loopComplete', function(){
       anim_p1_s6.goToAndStop( 159, true );
     });
-  }, 1500);
+  }, 1250);
 };
 
 
